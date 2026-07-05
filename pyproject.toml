@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iproute2"
+version = "0.1.0"
+description = "Python port of iproute2 commands using BCC"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "bcc",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+ip = "pyiproute2.ip:main"
+ss = "pyiproute2.ss:main"
+tc = "pyiproute2.tc:main"
+bridge = "pyiproute2.bridge:main"
