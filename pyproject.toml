@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "iproute2"
+name = "pyiproute2"
 version = "0.1.0"
 description = "Python port of iproute2 commands using BCC"
 readme = "README.md"

@@ -5,7 +5,7 @@ A Python port of [iproute2](https://github.com/iproute2/iproute2) commands using
 ## Installation
 
 ```
-pip install iproute2
+pip install pyiproute2
 ```
 
 ## Commands
