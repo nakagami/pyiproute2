@@ -191,7 +191,7 @@ def route_show(args) -> int:
                 mask = socket.inet_ntoa(struct.pack('<I', int(fields[7], 16)))
                 prefix = sum(bin(int(x)).count('1') for x in mask.split('.'))
                 flags = fields[3]
-                metric = fields[4]
+                metric = fields[6]
                 if dest == '0.0.0.0':
                     dest_text = 'default'
                 else:

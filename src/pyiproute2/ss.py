@@ -198,7 +198,7 @@ def filter_sockets(sockets: list, listening: bool, all_sockets: bool, states: li
     if listening:
         return [s for s in sockets if s['state'] == 'LISTEN']
     if not all_sockets:
-        return [s for s in sockets if s['state'] not in ('UNCONN', 'TIME-WAIT', 'CLOSE')]
+        return [s for s in sockets if s['state'] not in ('UNCONN', 'TIME-WAIT', 'CLOSE', 'LISTEN')]
     return sockets
 
 
